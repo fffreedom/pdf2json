@@ -6,13 +6,13 @@ The goal is to enable server side PDF parsing with interactive form elements whe
 
 ## Install
 
->npm install pdf2json
+>npm install j-pdfjson
 
 Or, install it globally:
->sudo npm install pdf2json -g
+>sudo npm install j-pdfjson -g
 
 To update with latest version:
->sudo npm update pdf2json -g
+>sudo npm update j-pdfjson -g
 
 To Run in RESTful Web Service or as Commandline Utility
 * More details can be found at the bottom of this document.
@@ -23,7 +23,7 @@ To Run in RESTful Web Service or as Commandline Utility
 
 ````javascript
     let fs = require('fs'),
-        PDFParser = require("pdf2json");
+        PDFParser = require("j-pdfjson");
 
     let pdfParser = new PDFParser();
 
@@ -49,7 +49,7 @@ Or, call directly with buffer:
 
 ````javascript
     let fs = require('fs'),
-        PDFParser = require("pdf2json");
+        PDFParser = require("j-pdfjson");
 
     let pdfParser = new PDFParser(this,1);
 
@@ -65,7 +65,7 @@ Or, call directly with buffer:
 
 ````javascript
     let fs = require('fs'),
-        PDFParser = require("pdf2json");
+        PDFParser = require("j-pdfjson");
 
     let pdfParser = new PDFParser();
 
@@ -81,7 +81,7 @@ Alternatively, you can pipe input and output streams: (requires v1.1.4)
 
 ````javascript
     let fs = require('fs'),
-        PDFParser = require("pdf2json");
+        PDFParser = require("j-pdfjson");
     
     let inputStream = fs.createReadStream("./pdf2json/test/pdf/fd/form/F1040EZ.pdf", {bufferSize: 64 * 1024});
     let outputStream = fs.createWriteStream("./pdf2json/test/target/fd/form/F1040EZ.json");
