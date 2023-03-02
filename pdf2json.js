@@ -1,4 +1,4 @@
 'use strict';
 
-var P2JCMD = require('./lib/p2jcmd');
+var P2JCMD = require('./p2jcmd');
 new P2JCMD().start();
