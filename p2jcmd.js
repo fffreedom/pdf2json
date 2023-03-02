@@ -5,8 +5,8 @@ let nodeUtil = require("util"),
     fs = require('fs'),
     path = require('path'),
 	_ = require('lodash'),
-    PDFParser = require("../pdfparser"),
-    pkInfo = require('../package.json'),
+    PDFParser = require("./pdfparser"),
+    pkInfo = require('./package.json'),
     async = require("async");
 
 const _PRO_TIMER = `${pkInfo.name}@${pkInfo.version} [${pkInfo.homepage}]`;
